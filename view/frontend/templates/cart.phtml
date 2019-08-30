@@ -20,6 +20,7 @@
  * @since       2016-07-29
  */
 ?>
+<script type="text/javascript">
 <?php /** @var $block \Wse\OptiMonk\Block\Cart */ ?>
 <?php $cartProducts = $block->getProducts(); ?>
 (function() {
@@ -31,3 +32,4 @@ adapter.Cart.add(<?php echo json_encode($sku); ?>, <?php echo json_encode($produ
 <?php } ?>
 <?php endif; ?>
 })();
+</script>
